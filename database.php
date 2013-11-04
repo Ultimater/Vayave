@@ -1,4 +1,5 @@
 <?php
+	if(!defined('APP_DIR'))exit;
 	
 	$config = array(
 		"username" => "root",
