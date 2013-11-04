@@ -1,5 +1,6 @@
 	<h1>Cootic Blog</h1>
 	<?php
+        if($posts)
 	foreach($posts as $post) : ?>			
 		<article>
 		<h3>
@@ -11,4 +12,9 @@
 				<?php echo $post['body'] ?>
 			</div>
 		</article>		
-	<?php endforeach ?>
+	<?php
+        endforeach;
+        else
+        {
+         echo 'No posts';
+        }
