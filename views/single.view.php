@@ -1,5 +1,6 @@
 	<h1>Cootic Blog</h1>
 	<?php
+        if($content)
 	foreach($content as $row) : ?>	
 		
 		<article>
@@ -12,4 +13,4 @@
 		</article>		
 	<?php endforeach ?>
 
-	<a href="/Vayave">Back</a>
+	<a href="./">Back</a>
