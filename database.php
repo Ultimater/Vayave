@@ -49,6 +49,17 @@
 
 	}
 
+	function get_last_insert($conn){
+
+		try {
+			$result = $conn->query("SELECT LAST_INSERT_ID()");
+			list($id)=$result->fetch(PDO::FETCH_NUM);
+                        return $id;
+		} catch (Exception $e){
+			return false;
+		}
+
+	}
 
 
 
