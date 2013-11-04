@@ -1,11 +1,10 @@
 <?php
 
-	require "functions.php";
-
-	$conn = connect($config);
-
-	if(!$conn) die("could not connect to database");
+    require "blog.php";
+    require "functions.php";
 
 	$posts = get_posts('posts', $conn, 10);
 
-	require "index.view.php";
+	get_view('index', array(
+		"posts" => $posts
+	));
