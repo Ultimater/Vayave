@@ -40,4 +40,20 @@
 		}
 	}
 
+	function insert_post($title, $body, $conn){
+
+		try {
+			$title = $conn->quote($title);
+			$body = $conn->quote($body);
+			$result = $conn->query("insert into posts(title,body) values($title, $body)");
+			return $result;
+		} catch (Exception $e){
+			return false;
+		}
+
+	}
+
+
+
+
 ?>
