@@ -1,7 +1,7 @@
 <?php 
-	
-	require "../blog.php";
-	require "../functions.php";		
+	define('APP_DIR',dirname(dirname(__FILE__)));
+	require APP_DIR.'/blog.php';
+	require APP_DIR.'/functions.php';
 		
 	$status = "";
 	if(isset($_POST['create_post'])){
