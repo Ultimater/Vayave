@@ -4,7 +4,10 @@
 		if($data){
 			extract($data);
 		}
-		require "views/{$view}.view.php";
+
+		$path = $view.".view.php";
+		require("views/layout.php");
+		//require "views/{$view}.view.php";
 	}
 
 ?>
