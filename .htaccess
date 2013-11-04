@@ -1,6 +1,6 @@
 RewriteEngine On
 
-RewriteBase /vayave/
+RewriteBase /Vayave/
 #Make sure this is the correct name of the directory containing this .htaccess file
 
 RewriteRule ^views/?.*$ index.php [R=301]
